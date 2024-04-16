@@ -1,0 +1,96 @@
+import os
+# Build paths inside the project like this: os.path.join (BASE_DIR, BASE_DIR= os.path.dirname (os.path.dirname (os.path.abspath (__file__)))
+.)
+# Quick-start development settings unsuitable for production # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
+# SECURITY WARNING: keep the secret key used in production secret! SECRET_KEY = 'ftc3--!!rmv6qn98r) 1! be^ (4-b)^0m_rqrli$ 7x (lyyn (18k*'
+# SECURITY WARNING: don't run with debug turned on in production! DEBUG = True
+ALLOWED_HOSTS = []
+# Application definition
+INSTALLED APPS = [
+]
+'django.contrib.admin',
+'django.contrib.auth',
+'django.contrib.contenttypes',
+'django.contrib.sessions',
+'django.contrib.messages', 'django.contrib.staticfiles',
+'proj_app', 'crispy forms',
+MIDDLEWARE
+]
+=
+[
+'django.middleware.security. SecurityMiddleware',
+'django.contrib.sessions.middleware. SessionMiddleware', 'django.middleware.common.CommonMiddleware',
+'django.middleware.csrf. CsrfViewMiddleware',
+'django.contrib.auth.middleware. AuthenticationMiddleware',
+'django.contrib.messages.middleware.MessageMiddleware',
+'django.middleware.clickjacking. XFrame OptionsMiddleware',
+ROOT_URLCONF
+=
+'proj.urls'
+
+TEMPLATES
+{
+=
+[
+'BACKEND': 'django.template.backends.django. DjangoTemplates', 'DIRS: [os.path.join (BASE_DIR, 'templates')],
+'APP_DIRS': True,
+'OPTIONS": {
+'context_processors': [
+'django.template.context_processors.debug',
+1.
+).
+},
+1
+'django.template.context_processors.request',
+'django.contrib.auth.context_processors.auth',
+'django.contrib.messages.context_processors.messages',
+WSGI_APPLICATION =
+# Database
+'proj.wsgi.application'
+https://docs.djangoproject.com/en/2.2/ref/settings/#databases
+DATABASES = {
+'default': {
+'ENGINE': 'djongo',
+"CLIENT": {"name": "sampleuser", "host":
+"mongodb+srv://user:
+user123@cluster0.nm2ax.mongodb.net/sampleuser?ssl-tru
+e&ssl_cert_reqs=CERT_NONE& retryWrites=true", "username": "user", "password": "user123",),
+}
+}
+# Password validation
+https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-
+validators
+=
+AUTH_PASSWORD_VALIDATORS [
+f
+'NAME':
+'django.contrib.auth.password_validation.UserAttributeSimilarityValidator
+'NAME':
+'django.contrib.auth.password_validation.Minimum LengthValidator",
+},
+'NAME':
+'django.contrib.auth.password_validation. Common PasswordValidator',
+},
+'NAME':
+'django.contrib.auth.password_validation. Numeric PasswordValidator',
+},
+]
+# Internationalization
+#
+https://docs.djangoproject.com/en/2.2/topics/i18n/
+LANGUAGE_CODE
+=
+'en-us'
+TIME ZONE = 'UTC'
+USE_118N = True
+USE L10N= True
+USE_TZ= True
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/2.2/howto/static-files/
+STATIC_URL = '/static/'
+STATICFILES_DIRS= [os.path.join (BASE_DIR, 'static')]
+DATE_INPUT_FORMATS = ('%d/%m/%Y', '%d-%m-%Y', '%Y-%m-%d') LOGIN_REDIRECT_URL = '/'
+IMPORT EXPORT_USE_TRANSACTIONS = False
+SESSION_COOKIE_AGE = 1800
+ALLOWED HOSTS = ['.localhost', '127.0.0.1', '[::]', '192.168.0.102']
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
